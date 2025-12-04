@@ -1,0 +1,38 @@
+.Banner-div {
+  position: relative;
+  width: 100%;
+  height: 650px;
+  overflow: hidden;
+}
+
+.Banner-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.7)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#banner-title {
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 3.5rem); /* responsive font size */
+  font-weight: 700;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 0 20px;
+  line-height: 1.3;
+}
